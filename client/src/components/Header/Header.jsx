@@ -1,11 +1,12 @@
 
 
 import '../../css/Header.css'
+import {words} from '../../word'
 
 const Header = () => {
     return (
         <header>
-            Header
+            {words.headerTitle}
         </header>
     )
 }
