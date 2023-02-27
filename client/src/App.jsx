@@ -3,6 +3,7 @@ import {useState} from 'react'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Products from './components/Products/Products'
+import Filter from './components/Filter/Filter'
 import data from './data.json'
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
       <main>
         <div className="wrapper">
             <Products products={products}/>
-            <div className="filter-wrapper">filter</div>
+            <Filter/>
         </div>
       </main>
       <Footer/>
