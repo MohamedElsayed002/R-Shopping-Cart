@@ -28,6 +28,31 @@
         color: #fff;
         padding: 7px;
         border-radius: 2px;
+        cursor: pointer;
     }
     }
+}
+
+.product-info {
+    background-color: #c0c0c0;
+    padding: 20px;
+    img {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+    }
+    p {
+        color: #2a5ea5;
+        font-size: 20px;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+.close-icon {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 20px;
 }
