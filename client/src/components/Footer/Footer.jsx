@@ -1,10 +1,11 @@
 
 import '../../css/Footer/Footer.css'
+import {words} from '../../word'
 
 const Footer = () => {
     return (
         <footer>
-            Footer
+            {words.footerTitle}
         </footer>
     )
 }
