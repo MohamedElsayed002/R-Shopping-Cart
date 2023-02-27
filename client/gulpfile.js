@@ -12,6 +12,11 @@ const Sass = gulpSass(sass)
 
 
 gulp.task('sass' ,async () => {
-    gulp.src('src/components/Header/*.scss').pipe(Sass()).pipe(gulp.dest('src/css'))
+    gulp.src('src/components/**/*.scss').pipe(Sass()).pipe(gulp.dest('src/css'))
 })
 
+gulp.task('watch' , async () => {
+    gulp.watch("src/components/**/*.scss" , async () => {
+        gulp.src("src/components/**/*.scss").pipe(Sass()).pipe(gulp.dest("src/css"))
+    })
+})
