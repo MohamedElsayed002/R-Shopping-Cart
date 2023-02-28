@@ -11,7 +11,7 @@
         "id" : "id2",
         "title" : "Computer",
         "image" : "../public/images/poly.png",
-        "desc" : "This is product 1",
+        "desc" : "This is product 2",
         "price" : 10,
         "sizes" : ["L","M"]
      },
@@ -19,7 +19,7 @@
         "id" : "id3",
         "title" : "Mohamed",
         "image" : "../public/images/Passprops.png",
-        "desc" : "This is product 1",
+        "desc" : "This is product 3",
         "price" : 40,
         "sizes" : ["XL"]
      },
@@ -27,7 +27,7 @@
         "id" : "id4",
         "title" : "Computer",
         "image" : "../public/images/poly.png",
-        "desc" : "This is product 1",
+        "desc" : "This is product 4",
         "price" : 130,
         "sizes" : ["L","M","S"]
      },
@@ -35,8 +35,16 @@
         "id" : "id5",
         "title" : "Computer",
         "image" : "../public/images/poly.png",
-        "desc" : "This is product 1",
+        "desc" : "This is product 5",
         "price" : 320,
         "sizes" : ["L","M","S"]
-     }
+     },
+     {
+      "id" : "id6",
+      "title" : "Computer",
+      "image" : "../public/images/poly.png",
+      "desc" : "This is product 6",
+      "price" : 32000,
+      "sizes" : ["XXL"]
+   }
 ]

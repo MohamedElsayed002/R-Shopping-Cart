@@ -4,8 +4,8 @@
   flex-wrap: wrap;
 }
 .products-wrapper .product-item {
-  width: 25%;
-  margin: 10px 10px;
+  width: 30%;
+  margin: 10px 0px;
 }
 .products-wrapper .product-item img {
   width: 100%;
