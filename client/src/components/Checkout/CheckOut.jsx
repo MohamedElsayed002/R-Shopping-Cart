@@ -1,14 +1,17 @@
 import {useState} from 'react'
 import '../../css/Checkout/CheckOut.css'
+import Zoom from 'react-reveal/Zoom'
+
 
 const CheckOut = ({showForm,setShowForm,submitOrder,handleChange}) => {
     
     return (
-        <>
+        <div>
         {
             showForm && (
                 <div  className="checkout-form">
                 <span onClick={() =>setShowForm(false)} className="close-icon">&times;</span>
+                <Zoom left cascade>
                 <form onSubmit={submitOrder}>
                     <div>
                         <label htmlFor="name">Name</label>
@@ -22,10 +25,12 @@ const CheckOut = ({showForm,setShowForm,submitOrder,handleChange}) => {
                         <button type="submit">Check Out</button>     
                     </div>
                 </form>
+                </Zoom>
             </div>
+
             )
         }
-        </>
+        </div>
     )
 }
 
