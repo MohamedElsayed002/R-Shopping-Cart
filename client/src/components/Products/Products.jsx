@@ -2,6 +2,8 @@
 import '../../css/Products/Products.css'
 import {useState} from 'react'
 import ProductModal from './ProductModal'
+import Bounce from 'react-reveal/Bounce'
+
 
 const Products = ({products,addToCart}) => {
 
@@ -16,6 +18,7 @@ const Products = ({products,addToCart}) => {
     }
     
     return (
+        <Bounce left cascade>
         <div>
             <div className="products-wrapper">
                 {
@@ -40,6 +43,7 @@ const Products = ({products,addToCart}) => {
 
             </div>
         </div>
+    </Bounce>
     )
 }
 

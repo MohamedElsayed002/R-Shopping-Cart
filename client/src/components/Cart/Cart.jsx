@@ -1,6 +1,8 @@
 import '../../css/Cart/Cart.css'
 import CheckOut from '../Checkout/CheckOut'
 import {useState} from 'react'
+import Bounce from 'react-reveal/Bounce'
+
 
 const Cart = ({cartItems,removeFromCart}) => {
 
@@ -21,8 +23,9 @@ const Cart = ({cartItems,removeFromCart}) => {
     }
 
     return (
-        <div className="cart-wrapper">
+              <div className="cart-wrapper">
             <div className="cart-title">{cartItems.length === 0 ? "Empty Cart" : <p>There is {cartItems.length} products in cart</p>}</div>
+            <Bounce left cascade>
             <div className="cart-items">
                 {
                     cartItems.map(item => {
@@ -42,6 +45,7 @@ const Cart = ({cartItems,removeFromCart}) => {
                     })
                 }
             </div>
+            </Bounce>
             {
                 cartItems.length !== 0 && (
                     <div className="cart-footer">
