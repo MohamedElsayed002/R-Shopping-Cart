@@ -6,6 +6,9 @@ import Products from './components/Products/Products'
 import Filter from './components/Filter/Filter'
 import Cart from './components/Cart/Cart'
 import data from './data.json'
+import {Provider} from 'react-redux'
+import store from './redux/store'
+
 
 const App = () => {
 
@@ -66,7 +69,8 @@ const App = () => {
   },[cartItems])
 
   return (
-    <div className="layout">
+    <Provider store={store}>
+          <div className="layout">
       <Header/>
       <main>
         <div className="wrapper">
@@ -87,6 +91,7 @@ const App = () => {
       </main>
       <Footer/>
     </div>
+    </Provider>
   )
 }
 

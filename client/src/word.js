@@ -1,5 +1,5 @@
 export const words = {
     headerTitle : 'Shopping Cart',
-    footerTitle : 'Copyright © 2018 - 2019',
+    footerTitle : 'SAYOODA MARKET',
     content : 'Content'
 }
